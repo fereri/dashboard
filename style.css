@@ -1,1 +1,38 @@
+body,
+html {
+    height: 100%;
+    margin: 0;
+}
 
+.content {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    height: 100%;
+}
+
+.left-content {
+    background: rgb(39, 107, 180);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 10px;
+}
+
+.right-content {
+    background: white;
+}
+
+.heading {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.opt {
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.heading,
+.opt {
+    color: aliceblue;
+}
