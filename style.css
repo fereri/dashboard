@@ -2,6 +2,8 @@ body,
 html {
     height: 100%;
     margin: 0;
+    --margin-bottom: 200px;
+    --padding-bottom: 60px;
 }
 
 input {
@@ -9,6 +11,13 @@ input {
     background-color: grey;
     border: none;
     border-radius: 2rem;
+}
+
+button {
+    border: none;
+    background-color: blanchedalmond;
+    border-radius: 20px;
+    padding: 10px 20px;
 }
 
 .content {
@@ -33,27 +42,54 @@ input {
 .content-body {
     background-color: bisque;
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: 50px 1fr 50px 1fr;
+    grid-template-columns: 2.2fr 0.8fr;
+    grid-template-rows: 50px 360px 50px 1fr;
+    padding-bottom: 50px;
+    padding-right: 50px;
 }
 
 .proj-head {
     grid-column: 1;
     grid-row: 1;
+    padding-left: 60px;
+}
+
+.profile-opt {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.trending {
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(auto-fit, 50px);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+    
+}
+
+.trend-card {
+    display: flex;
+    flex-direction: column;
 }
 
 .card {
     background-color: aliceblue;
     width: 300px;
-    height: 150px;
+    height: 180px;
     padding: 10px;
     border-radius: 10px;
     border-left: 4px solid #f5a623;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
 }
 
 .ann-sect {
     background-color: white;
     border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
 }
 
 .ann-cards {
@@ -70,13 +106,16 @@ input {
 
 .projects {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(2, 350px);
+    grid-template-rows: 200px 200px;
+    grid-auto-rows: 200px;
     gap: 10px;
     grid-column: 1;
-    grid-row: 2 / 5;
     justify-items: center;
-    padding: 5px;
+    grid-row: 2 / 5;
+    margin-left: 40px;
+    row-gap: 20px;
+    align-items: stretch;
 }
 
 .search-bar {
@@ -88,7 +127,7 @@ input {
     display: grid;
     grid-template-columns: 3fr 1fr;
     align-items: center;
-    padding: 0px 20px;
+    padding: 0px 60px;
 }
 
 .right-content {
@@ -105,6 +144,10 @@ input {
 .opt {
     font-size: 30px;
     font-weight: 400;
+}
+
+.trending p {
+    margin: 0px;
 }
 
 .heading,
